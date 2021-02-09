@@ -6,6 +6,6 @@ class Student(models.Model):
     lname=models.CharField(max_length=50,verbose_name="Enter Your Last Name")
     gender=models.CharField(verbose_name='Choose Your Gender',max_length=10)
     emailid=models.EmailField(max_length=250,verbose_name='Enter Your Email Id')
-    phone=models.IntegerField(verbose_name='Enetr Your Mobile Number')
+    phone=models.CharField(max_length=12,verbose_name='Enter Your Mobile Number')
     
 
