@@ -6,7 +6,8 @@ from django.core.mail import send_mail
 from django.conf import settings
 from demo.settings import EMAIL_HOST_USER 
 from django.contrib import auth
-from django.contrib.auth import authenticate,user
+from django.contrib.auth import authenticate
+from django.contrib.auth.models import User
 
 # Create your views here.
 def index(request):
